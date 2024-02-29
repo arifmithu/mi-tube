@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiTube</title>
+    <link rel="shortcut icon" href="images/video-fav.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/20c7659e38.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="">
+    <header>
+      <nav class="flex justify-between mt-5 shadow-lg mb-4 pb-4 px-14">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-circle-play text-red-500 text-[45px]"></i>
+          <h3>
+            <span class="text-red-500 text-3xl font-extrabold mr-1">Mi</span
+            ><span class="text-3xl font-bold">Tube</span>
+          </h3>
+        </div>
+        <div>
+          <button id="sorted" class="btn btn-primary bg-gray-500 text-xl">
+            Sort by view
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-error text-white text-xl">Blog</button>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-14">
+      <div
+        id="category-container"
+        class="flex justify-center gap-4 mb-12"
+      ></div>
+      <!-- video container -->
+      <section
+        id="video-container"
+        class="grid grid-cols-3 gap-8 mb-12"
+      ></section>
+      <!-- no data available -->
+      <section id="no-data-available" class="hidden text-center mt-20">
+        <img class="inline-block" src="images/no-data.png" alt="" />
+        <h3 class="text-2xl font-bold mt-4">
+          Opps!! Sorry there is no content here.
+        </h3>
+      </section>
+    </main>
+    <script src="js/utils.js"></script>
+  </body>
+</html>
