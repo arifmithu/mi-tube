@@ -86,7 +86,7 @@ function makeCard(videos) {
             <h3 class="text-xl font-bold text-wrap">${video.title}</h3>
             <div class="flex items-center gap-2">
               <p>${video.authors[0].profile_name}</p>
-              <i id='${video.authors[0].profile_name}' class="fa-solid fa-circle-check"></i>
+              <i id='${video.authors[0].profile_name}' class="fa-solid fa-circle-check text-blue-500"></i>
             </div>
             <p>${video.others.views}</p>
           </div>
